@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitto Thomas| Portfolio</title>
+<link rel="icon" type="image/png" href="./assets/images/onam.jpg" style="border-radius: 50%;">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="light">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl sm:text-2xl font-bold gradient-text">Jitto Thomas</a>
+                
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="#home" class="nav-link text-slate-700 dark:text-slate-300 font-medium">Home</a>
+                    <a href="#about" class="nav-link text-slate-700 dark:text-slate-300 font-medium">About</a>
+                    <a href="#skills" class="nav-link text-slate-700 dark:text-slate-300 font-medium">Skills</a>
+                    <a href="#experience" class="nav-link text-slate-700 dark:text-slate-300 font-medium">Experience</a>
+                    <!-- <a href="#projects" class="nav-link text-slate-700 dark:text-slate-300 font-medium">Projects</a> -->
+                    <a href="#contact" class="nav-link text-slate-700 dark:text-slate-300 font-medium">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <!-- <button id="theme-toggle" class="p-2 rounded-full bg-slate-100 dark:bg-slate-800">
+                        <i data-feather="moon" class="hidden dark:block text-yellow-300 w-4 h-4 sm:w-5 sm:h-5"></i>
+                        <i data-feather="sun" class="block dark:hidden text-yellow-500 w-4 h-4 sm:w-5 sm:h-5"></i>
+                    </button> -->
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-full bg-slate-100 dark:bg-slate-800">
+                        <i data-feather="menu" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 w-64 bg-white dark:bg-slate-800 shadow-lg z-50 p-6">
+        <div class="flex justify-end mb-8">
+            <button id="close-menu" class="p-2 rounded-full bg-slate-100 dark:bg-slate-700">
+                <i data-feather="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-6">
+            <a href="#home" class="nav-link text-slate-700 dark:text-slate-300 font-medium text-lg">Home</a>
+            <a href="#about" class="nav-link text-slate-700 dark:text-slate-300 font-medium text-lg">About</a>
+            <a href="#skills" class="nav-link text-slate-700 dark:text-slate-300 font-medium text-lg">Skills</a>
+            <a href="#experience" class="nav-link text-slate-700 dark:text-slate-300 font-medium text-lg">Experience</a>
+            <!-- <a href="#projects" class="nav-link text-slate-700 dark:text-slate-300 font-medium text-lg">Projects</a> -->
+            <a href="#contact" class="nav-link text-slate-700 dark:text-slate-300 font-medium text-lg">Contact</a>
+        </nav>
+        <div class="mt-12">
+            <h4 class="font-semibold mb-4 text-slate-700 dark:text-slate-300">Connect with me</h4>
+            <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/jitto-thomas-aa88a81a1" target="_blank" class="p-3 bg-slate-100 dark:bg-slate-700 rounded-full shadow-md hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+                    <i data-feather="linkedin" class="text-blue-600 dark:text-blue-400 w-4 h-4"></i>
+                </a>
+                <a href="https://github.com/jitto1" target="_blank" class="p-3 bg-slate-100 dark:bg-slate-700 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-900/30 transition-colors">
+                    <i data-feather="github" class="text-gray-700 dark:text-gray-300 w-4 h-4"></i>
+                </a>
+                <a href="mailto:jittothomas2255@gmail.com" target="_blank" class="p-3 bg-slate-100 dark:bg-slate-700 rounded-full shadow-md hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+                    <i data-feather="mail" class="text-blue-400 w-4 h-4"></i>
+                </a>
+                <a href="https://www.instagram.com/_jitto_thomas_/" target="_blank" class="p-3 bg-slate-100 dark:bg-slate-700 rounded-full shadow-md hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
+                    <i data-feather="instagram" class="text-red-600 dark:text-red-400 w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16 sm:pt-20">
+        <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-20">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hi, I'm <br>
+                    <span class="gradient-text">Jitto Thomas</span></h1>
+                    <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 text-slate-600 dark:text-slate-300">
+                        <span id="typed"></span>
+                    </h2>
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 mb-6 sm:mb-8 max-w-lg" id="text-hero">
+Cybersecurity specialist and full-stack developer with 2+ years at Infosys, building scalable web apps and secure systems using Python, .NET, and Angular. Currently pursuing a Master's in Cybersecurity at Saarland University, with a focus on cloud security, threat detection, and secure software design. Passionate about solving real-world security challenges through clean, efficient code.                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 hero-buttons">
+                        <a href="#contact" class="px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg transition-all duration-300 text-center">
+                            Contact Me
+                        </a>
+                        <a href="./assets/documents/Jitto thomas.pdf" class="px-4 sm:px-6 py-2 sm:py-3 border border-blue-600 text-blue-600 dark:text-blue-400 font-medium rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-all duration-300 text-center" target="_blank">
+                            View Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 hero-image">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-20 blur-xl animate-pulse"></div>
+                        <div class="relative w-full h-full flex items-center justify-center">
+                            <img src="./assets/images/alba.jpg" 
+                                 alt="Jitto" 
+                                 class="w-full h-full object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-xl animate-float">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 section-title dark">About Me</h2>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-8 sm:gap-12">
+                <div class="lg:w-1/3 flex justify-center">
+                    <div class="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72">
+                        <div class="absolute -inset-3 sm:-inset-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-20 blur-xl"></div>
+                        <img src="./assets/images/onam.jpg" 
+                             alt="Jitto" 
+                             class="relative w-full h-full object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-xl">
+                    </div>
+                </div>
+                
+                <div class="lg:w-2/3 mt-8 lg:mt-0">
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Who am I?</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-4 sm:mb-6 text-sm sm:text-base">
+                        Cybersecurity-focused full-stack developer with 2 years of industry experience at Infosys, currently pursuing a Master’s in Cybersecurity at Saarland University. Skilled in building secure, scalable applications using Python, .NET, JavaScript, and SQL. Experienced in cloud platforms, system optimization, and secure software architecture. Passionate about solving real-world problems through clean code, collaboration, and continuous innovation."
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                        <div class="bg-white dark:bg-slate-800 p-4 sm:p-6 rounded-xl shadow-md card-hover">
+                            <div class="flex items-center mb-2 sm:mb-3">
+                                <div class="p-2 sm:p-3 rounded-full bg-blue-100 dark:bg-blue-900/30 mr-3 sm:mr-4">
+                                    <i data-feather="award" class="text-blue-600 dark:text-blue-400 w-4 h-4 sm:w-5 sm:h-5"></i>
+                                </div>
+                                <h4 class="font-semibold text-sm sm:text-base" style="color: white;">Education</h4>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm">
+                                <strong>Master in Science(M.s)</strong> 2024-current
+                                <br> CyberSecurity
+                                <br>
+                                <br>
+                                <strong>Bachelor in Technology(B.Tech) Honours</strong> 2018-2022
+                                <br> Computer Science and Engineering
+                                </p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-slate-800 p-4 sm:p-6 rounded-xl shadow-md card-hover">
+                            <div class="flex items-center mb-2 sm:mb-3">
+                                <div class="p-2 sm:p-3 rounded-full bg-purple-100 dark:bg-purple-900/30 mr-3 sm:mr-4">
+                                    <i data-feather="briefcase" class="text-purple-600 dark:text-purple-400 w-4 h-4 sm:w-5 sm:h-5"></i>
+                                </div>
+                                <h4 class="font-semibold text-sm sm:text-base" style="color: white;">Experience</h4>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm">
+                                <strong>Systems Engineer</strong> 2022-2024
+                                <br><strong><i>Infosys Ltd</i></strong>
+                                <br>Full-Stack Developer(.NET, Angular)
+                                <br>
+                            </p>
+                            <br>
+                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm">
+                                <strong>WorkStudent</strong> Aug 2025- Oct 2025
+                                <br><strong><i>Filehub Gmbh</i></strong>
+                                <br>Full-Stack Developer(Laravel(php), Angular)
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 section-title">My Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+                <!-- Technical Skills -->
+                <div class="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-6 sm:mb-8">
+                        <div class="p-2 sm:p-3 rounded-full bg-blue-100 dark:bg-blue-900/30 mr-3 sm:mr-4">
+                            <i data-feather="code" class="text-blue-600 dark:text-blue-400 w-4 h-4 sm:w-5 sm:h-5"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-semibold" style="color: white;">Technical Skills</h3>
+                    </div>
+                    
+                    <div class="space-y-4 sm:space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base" style="color: white;">Python</span>
+                                <span class="text-sm sm:text-base" style="color: white;">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base" style="color: white;">C</span>
+                                <span class="text-sm sm:text-base" style="color: white;">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base" style="color: white;">Java</span>
+                                <span class="text-sm sm:text-base" style="color: white;">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base" style="color: white;">HTML CSS</span>
+                                <span class="text-sm sm:text-base" style="color: white;">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base" style="color: white;">Angular</span>
+                                <span class="text-sm sm:text-base" style="color: white;">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base" style="color: white;">.NET</span>
+                                <span class="text-sm sm:text-base" style="color: white;">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cybersecurity Skills -->
+                <div class="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-6 sm:mb-8">
+                        <div class="p-2 sm:p-3 rounded-full bg-purple-100 dark:bg-purple-900/30 mr-3 sm:mr-4">
+                            <i data-feather="shield" class="text-purple-600 dark:text-purple-400 w-4 h-4 sm:w-5 sm:h-5"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-semibold" style="color: white;">Cybersecurity Skills</h3>
+                    </div>
+                    
+                    <div class="space-y-4 sm:space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base dark">Penetration Testing</span>
+                                <span class="text-sm sm:text-base dark">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base dark">Secure Coding</span>
+                                <span class="text-sm sm:text-base dark">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base dark">Network Security</span>
+                                <span class="text-sm sm:text-base dark">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base dark">Cryptography</span>
+                                <span class="text-sm sm:text-base dark">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 sm:mb-2">
+                                <span class="font-medium text-sm sm:text-base dark">Threat Modeling</span>
+                                <span class="text-sm sm:text-base dark">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools & Technologies -->
+            <div class="mt-12 sm:mt-16">
+                <h3 class="text-xl sm:text-2xl font-semibold text-center mb-6 sm:mb-8">Tools & Technologies</h3>
+                <div class="flex flex-wrap justify-center gap-3 sm:gap-4">
+                    <div class="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-white dark:bg-slate-800 rounded-full shadow-md text-xs sm:text-sm">
+                        <i data-feather="code" class="mr-1 sm:mr-2 text-slate-700 dark:text-slate-300 w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="dark">Python</span>
+                    </div>
+                    <div class="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-white dark:bg-slate-800 rounded-full shadow-md text-xs sm:text-sm">
+                        <i data-feather="database" class="mr-1 sm:mr-2 text-blue-500 w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="dark">SQL</span>
+                    </div>
+                    <div class="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-white dark:bg-slate-800 rounded-full shadow-md text-xs sm:text-sm">
+                        <i data-feather="cpu" class="mr-1 sm:mr-2 text-green-500 w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="dark">Linux</span>
+                    </div>
+                    <div class="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-white dark:bg-slate-800 rounded-full shadow-md text-xs sm:text-sm">
+                        <i data-feather="code" class="mr-1 sm:mr-2 text-orange-500 w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="dark">HTML, CSS</span>
+                    </div>
+                    <div class="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-white dark:bg-slate-800 rounded-full shadow-md text-xs sm:text-sm">
+                        <i data-feather="terminal" class="mr-1 sm:mr-2 text-purple-500 w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="dark">C, Java</span>
+                    </div>
+                    <div class="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-white dark:bg-slate-800 rounded-full shadow-md text-xs sm:text-sm">
+                        <i data-feather="figma" class="mr-1 sm:mr-2 text-red-500 w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="dark">Figma</span>
+                    </div>
+                    <div class="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-white dark:bg-slate-800 rounded-full shadow-md text-xs sm:text-sm">
+                        <i data-feather="briefcase" class="mr-1 sm:mr-2 text-yellow-500 w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="dark">MS Office</span>
+                    </div>
+                    <div class="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-white dark:bg-slate-800 rounded-full shadow-md text-xs sm:text-sm">
+                        <i data-feather="layout" class="mr-1 sm:mr-2 text-blue-400 w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="dark">Anglar, .NET</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 section-title dark">Work & Education</h2>
+            
+            <div class="relative max-w-3xl mx-auto">
+                <div class="timeline space-y-6 sm:space-y-8">
+                                       
+                    <!-- Masters Degree -->
+                    <div class="timeline-item pl-6 sm:pl-8 relative">
+                        <div class="bg-white dark:bg-slate-800 p-4 sm:p-6 rounded-xl shadow-lg card-hover">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
+                                <h3 class="text-lg sm:text-xl font-semibold" id="text-hero-white">M.S. in Cybersecurity</h3>
+                                <span class="text-xs sm:text-sm text-purple-600 dark:text-purple-400 font-medium bg-purple-100 dark:bg-purple-900/30 px-2 py-1 sm:px-3 sm:py-1 rounded-full mt-1 sm:mt-0">2024 - Present</span>
+                            </div>
+                            <h4 class="text-sm sm:text-lg text-slate-500 dark:text-slate-400 mb-2 sm:mb-3">Saarland University, Germany</h4>
+                            <ul class="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                                <li>Specializing in Network Security and Secure Software Development</li>
+                                <li>Coursework includes Advanced Cryptography, Ethical Hacking, Digital Forensics, and Cloud Security</li>
+                                <li>Research focus on AI-powered threat detection systems</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- WorkStudent -->
+                    <div class="timeline-item pl-6 sm:pl-8 relative">
+                        <div class="bg-white dark:bg-slate-800 p-4 sm:p-6 rounded-xl shadow-lg card-hover">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
+                                <h3 class="text-lg sm:text-xl font-semibold" id="text-hero-white">Work Student</h3>
+                                <span class="text-xs sm:text-sm text-purple-600 dark:text-purple-400 font-medium bg-purple-100 dark:bg-purple-900/30 px-2 py-1 sm:px-3 sm:py-1 rounded-full mt-1 sm:mt-0">Aug 2025- Oct 2025</span>
+                            </div>
+                            <h4 class="text-sm sm:text-lg text-slate-500 dark:text-slate-400 mb-2 sm:mb-3">Filehub Gmbh, Germany</h4>
+                            <ul class="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                                <li>Developed and maintained fullstack features using Angular for frontend and Laravel for backend, contributing to a robust document management platform.</li>
+                                <li>Implemented API integrations for document automation, enabling seamless workflows such as auto-generation, digital signing, and structured storage of business documents.</li>
+                                <li>Optimized data flow between frontend and backend, ensuring efficient communication and error handling across RESTful endpoints.</li>
+                                <li>Troubleshot and debugged complex issues in document workflows, using advanced grep and log filtering techniques on Linux systems to identify bottlenecks and edge cases.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Infosys Experience -->
+                    <div class="timeline-item pl-6 sm:pl-8 relative">
+                        <div class="bg-white dark:bg-slate-800 p-4 sm:p-6 rounded-xl shadow-lg card-hover">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
+                                <h3 class="text-lg sm:text-xl font-semibold" id="text-hero-white">Full-Stack Developer</h3>
+                                <span class="text-xs sm:text-sm text-blue-600 dark:text-blue-400 font-medium bg-blue-100 dark:bg-blue-900/30 px-2 py-1 sm:px-3 sm:py-1 rounded-full mt-1 sm:mt-0">2022 - 2024</span>
+                            </div>
+                            <h4 class="text-sm sm:text-lg text-slate-500 dark:text-slate-400 mb-2 sm:mb-3">Infosys Ltd. – Mysore & Trivandrum, India</h4>
+                            <ul class="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                                <li>Completed 6-month intensive training in full-stack development and secure coding practices at Infosys Global Education Centre, Mysore.</li>
+                                <li>Served as Systems Engineer in Trivandrum, delivering scalable and secure enterprise web applications.</li>
+                                <li>Built and maintained Angular + Node.js applications with PostgreSQL, ensuring performance, security, and responsiveness.</li>
+                                <li>Optimized backend queries and frontend performance, reducing load times by 40%.</li>
+                                <li>Mentored junior developers in secure software development lifecycle (SSDLC), Agile Methodology and full-stack project delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Bachelor's Degree -->
+                    <div class="timeline-item pl-6 sm:pl-8 relative">
+                        <div class="bg-white dark:bg-slate-800 p-4 sm:p-6 rounded-xl shadow-lg card-hover">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
+                                <h3 class="text-lg sm:text-xl font-semibold" id="text-hero-white">B.Tech in Computer Science (Honors) CGPA- 8.47</h3>
+                                <span class="text-xs sm:text-sm text-green-600 dark:text-green-400 font-medium bg-green-100 dark:bg-green-900/30 px-2 py-1 sm:px-3 sm:py-1 rounded-full mt-1 sm:mt-0">2018 - 2022</span>
+                            </div>
+                            <h4 class="text-sm sm:text-lg text-slate-500 dark:text-slate-400 mb-2 sm:mb-3">A P J Abdul Kalam Technological University, Kerala</h4>
+                            <ul class="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                                <li>Graduated with Honours, with strong academic performance and technical focus in software engineering and systems security.</li>
+                                <li>Served as the Department Representative during final year, acting as a bridge between faculty and students and organizing academic and tech events.</li>
+                                <li>Completed extracurricular training in: Cloud Security Essentials, Mobile Application Security Fundamentals</li>
+                                <li>Participated in coding clubs and group projects that emphasized collaborative problem-solving and modern software development practices.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 section-title">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="project-card h-full">
+                    <div class="project-inner h-full">
+                        <div class="project-front h-full bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden card-hover">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="SecureAuth" 
+                                 class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4 sm:p-6">
+                                <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">SecureAuth</h3>
+                                <p class="text-slate-600 dark:text-slate-300 mb-3 sm:mb-4 text-xs sm:text-sm">Multi-factor authentication system with biometric verification</p>
+                                <div class="flex flex-wrap gap-1 sm:gap-2">
+                                    <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">React</span>
+                                    <span class="text-xs px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">Node.js</span>
+                                    <span class="text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full">WebAuthn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-4 sm:p-6 flex flex-col justify-center">
+                            <h3 class="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-4">SecureAuth Details</h3>
+                            <p class="text-blue-100 mb-3 sm:mb-4 text-xs sm:text-sm">A secure authentication system implementing FIDO2 standards with biometric and hardware key support.</p>
+                            <ul class="list-disc pl-4 sm:pl-5 text-blue-100 space-y-1 mb-4 sm:mb-6 text-xs sm:text-sm">
+                                <li>Reduced account takeovers by 98%</li>
+                                <li>Implemented zero-trust architecture</li>
+                                <li>Patent-pending anti-phishing technique</li>
+                            </ul>
+                            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
+                                <a href="#" class="px-3 sm:px-4 py-1 sm:py-2 bg-white text-blue-600 rounded-lg font-medium text-xs sm:text-sm text-center">Live Demo</a>
+                                <a href="#" class="px-3 sm:px-4 py-1 sm:py-2 border border-white text-white rounded-lg text-xs sm:text-sm text-center">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card h-full">
+                    <div class="project-inner h-full">
+                        <div class="project-front h-full bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden card-hover">
+                            <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" 
+                                 alt="ThreatWatch" 
+                                 class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4 sm:p-6">
+                                <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">ThreatWatch</h3>
+                                <p class="text-slate-600 dark:text-slate-300 mb-3 sm:mb-4 text-xs sm:text-sm">Real-time network threat detection dashboard</p>
+                                <div class="flex flex-wrap gap-1 sm:gap-2">
+                                    <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">Python</span>
+                                    <span class="text-xs px-2 py-1 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full">Elasticsearch</span>
+                                    <span class="text-xs px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-full">Kibana</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-4 sm:p-6 flex flex-col justify-center">
+                            <h3 class="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-4">ThreatWatch Details</h3>
+                            <p class="text-blue-100 mb-3 sm:mb-4 text-xs sm:text-sm">AI-powered network monitoring system that detects and responds to threats in real-time.</p>
+                            <ul class="list-disc pl-4 sm:pl-5 text-blue-100 space-y-1 mb-4 sm:mb-6 text-xs sm:text-sm">
+                                <li>Reduces false positives by 75% with ML</li>
+                                <li>Automated incident response workflows</li>
+                                <li>Integrates with major SIEM solutions</li>
+                            </ul>
+                            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
+                                <a href="#" class="px-3 sm:px-4 py-1 sm:py-2 bg-white text-blue-600 rounded-lg font-medium text-xs sm:text-sm text-center">Case Study</a>
+                                <a href="#" class="px-3 sm:px-4 py-1 sm:py-2 border border-white text-white rounded-lg text-xs sm:text-sm text-center">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card h-full">
+                    <div class="project-inner h-full">
+                        <div class="project-front h-full bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden card-hover">
+                            <img src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="CodeGuard" 
+                                 class="w-full h-40 sm:h-48 object-cover">
+                            <div class="p-4 sm:p-6">
+                                <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">CodeGuard</h3>
+                                <p class="text-slate-600 dark:text-slate-300 mb-3 sm:mb-4 text-xs sm:text-sm">Static code analysis for security vulnerabilities</p>
+                                <div class="flex flex-wrap gap-1 sm:gap-2">
+                                    <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">TypeScript</span>
+                                    <span class="text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full">Docker</span>
+                                    <span class="text-xs px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full">CI/CD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-4 sm:p-6 flex flex-col justify-center">
+                            <h3 class="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-4">CodeGuard Details</h3>
+                            <p class="text-blue-100 mb-3 sm:mb-4 text-xs sm:text-sm">SAST tool that integrates with development pipelines to catch security issues early.</p>
+                            <ul class="list-disc pl-4 sm:pl-5 text-blue-100 space-y-1 mb-4 sm:mb-6 text-xs sm:text-sm">
+                                <li>Detects 50+ vulnerability patterns</li>
+                                <li>Reduces remediation costs by 90%</li>
+                                <li>Developer-friendly remediation guides</li>
+                            </ul>
+                            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
+                                <a href="#" class="px-3 sm:px-4 py-1 sm:py-2 bg-white text-blue-600 rounded-lg font-medium text-xs sm:text-sm text-center">Docs</a>
+                                <a href="#" class="px-3 sm:px-4 py-1 sm:py-2 border border-white text-white rounded-lg text-xs sm:text-sm text-center">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10 sm:mt-12">
+                <a href="#" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border border-blue-600 text-blue-600 dark:text-blue-400 font-medium rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-all duration-300 text-sm sm:text-base">
+                    View All Projects
+                    <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 section-title" style="color: white;">Get In Touch</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8 sm:gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Let's talk about security</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-6 sm:mb-8 text-sm sm:text-base">
+                        Whether you're interested in discussing a potential project, have questions about my work, or want to talk cybersecurity, feel free to reach out. I'm always open to interesting collaborations and conversations about securing the digital world.
+                    </p>
+                    
+                    <div class="space-y-4 sm:space-y-6">
+                        <div class="flex items-start">
+                            <div class="p-2 sm:p-3 rounded-full bg-blue-100 dark:bg-blue-900/30 mr-3 sm:mr-4">
+                                <i data-feather="mail" class="text-blue-600 dark:text-blue-400 w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 text-sm sm:text-base">Email</h4>
+                                <a href="mailto:jittothomasde@gmail.com" class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs sm:text-sm">jittothomasde@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="p-2 sm:p-3 rounded-full bg-purple-100 dark:bg-purple-900/30 mr-3 sm:mr-4">
+                                <i data-feather="phone" class="text-purple-600 dark:text-purple-400 w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 text-sm sm:text-base">Phone</h4>
+                                <a href="tel: (+49) 1783267646" class="text-slate-600 dark:text-slate-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors text-xs sm:text-sm"> (+49) 1783267646</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="p-2 sm:p-3 rounded-full bg-green-100 dark:bg-green-900/30 mr-3 sm:mr-4">
+                                <i data-feather="map-pin" class="text-green-600 dark:text-green-400 w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 text-sm sm:text-base">Location</h4>
+                                <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm">Karcherstraße 22
+ Saarbrücken, 66111
+ Saarbrücken (Germany)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 sm:mt-10">
+                        <h4 class="font-semibold mb-3 sm:mb-4 text-sm sm:text-base" id="text-hero-white">Connect with me</h4>
+                        <div class="flex space-x-3">
+                <a href="https://www.linkedin.com/in/jitto-thomas-aa88a81a1" target="_blank" class="p-3 bg-slate-100 dark:bg-slate-700 rounded-full shadow-md hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+                    <i data-feather="linkedin" class="text-blue-600 dark:text-blue-400 w-4 h-4"></i>
+                </a>
+                <a href="https://github.com/jitto1" target="_blank" class="p-3 bg-slate-100 dark:bg-slate-700 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-900/30 transition-colors">
+                    <i data-feather="github" class="text-gray-700 dark:text-gray-300 w-4 h-4"></i>
+                </a>
+                <a href="mailto:jittothomas2255@gmail.com" target="_blank" class="p-3 bg-slate-100 dark:bg-slate-700 rounded-full shadow-md hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+                    <i data-feather="mail" class="text-blue-400 w-4 h-4"></i>
+                </a>
+                <a href="https://www.instagram.com/_jitto_thomas_/" target="_blank" class="p-3 bg-slate-100 dark:bg-slate-700 rounded-full shadow-md hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
+                    <i data-feather="instagram" class="text-red-600 dark:text-red-400 w-4 h-4"></i>
+                </a>
+            </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="lg:w-1/2 mt-8 lg:mt-0">
+                    <form class="bg-white dark:bg-slate-800 p-4 sm:p-6 md:p-8 rounded-xl shadow-lg">
+                        <div class="mb-4 sm:mb-6">
+                            <label for="name" class="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 text-slate-700 dark:text-slate-300">Your Name</label>
+                            <input type="text" id="name" class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs sm:text-sm" placeholder="John Doe">
+                        </div>
+                        
+                        <div class="mb-4 sm:mb-6">
+                            <label for="email" class="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 text-slate-700 dark:text-slate-300">Email Address</label>
+                            <input type="email" id="email" class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs sm:text-sm" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="mb-4 sm:mb-6">
+                            <label for="subject" class="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 text-slate-700 dark:text-slate-300">Subject</label>
+                            <input type="text" id="subject" class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs sm:text-sm" placeholder="Project Inquiry">
+                        </div>
+                        
+                        <div class="mb-6 sm:mb-8">
+                            <label for="message" class="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 text-slate-700 dark:text-slate-300">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs sm:text-sm" placeholder="Your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center text-xs sm:text-sm">
+                            Send Message
+                            <i data-feather="send" class="ml-2 w-4 h-4"></i>
+                        </button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 sm:py-10 bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <a href="#" class="text-xl sm:text-2xl font-bold gradient-text">Jitto Thomas</a>
+                    <p class="text-slate-600 dark:text-slate-300 mt-1 sm:mt-2 text-xs sm:text-sm">Securing the digital world, one line of code at a time.</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 sm:space-x-6 mb-3 sm:mb-4">
+                        <a href="#" class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs sm:text-sm">Home</a>
+                        <a href="#about" class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs sm:text-sm">About</a>
+                        <a href="#experience" class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs sm:text-sm">Experience</a>
+                        <a href="#contact" class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs sm:text-sm">Contact</a>
+                    </div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">© 2025 Jitto Thomas. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+        
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Dark/Light Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check for saved user preference or system preference
+        const userTheme = localStorage.getItem('theme');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (userTheme === 'dark' || (!userTheme && systemTheme)) {
+            html.classList.add('dark');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const isDark = html.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+        
+        // Typed.js Initialization
+        const typed = new Typed('#typed', {
+            strings: [
+                'Cybersecurity Specialist',
+                'Full-Stack Developer',
+                'Cloud Security Expert',
+                'Penetration Tester'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+            smartBackspace: true
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate skill bars on scroll
+        const animateSkillBars = () => {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            bar.style.width = width;
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                observer.observe(bar.parentElement);
+            });
+        };
+        
+        // Initialize animations when page loads
+        window.addEventListener('DOMContentLoaded', animateSkillBars);
+        
+        // Disable project card flip on mobile
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.classList.remove('project-card');
+            });
+        }
+    </script>
+</body>
+
+</html>
+
+
+
